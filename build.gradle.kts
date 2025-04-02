@@ -41,7 +41,5 @@ tasks.test {
 
 pmd {
     toolVersion = '6.55.0'
-    ruleSetFiles = files("pmd.xml")
     ignoreFailures = true
-    ruleSets = []
 }
