@@ -41,5 +41,5 @@ tasks.test {
 
 pmd {
     toolVersion = "6.55.0"
-    ignoreFailures = true
+    maxFailures = 999999
 }
