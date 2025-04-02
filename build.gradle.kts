@@ -43,3 +43,7 @@ pmd {
     toolVersion = "6.55.0"
     maxFailures = 999999
 }
+
+tasks.withType<Pmd>().configureEach {
+    exclude("**/test/**")  // Игнорировать тестовые классы
+}
