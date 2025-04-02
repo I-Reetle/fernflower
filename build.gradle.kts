@@ -1,6 +1,7 @@
 // Copyright 2000-2025 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license.
 plugins {
   java
+  pmd
 }
 
 tasks.compileJava {
@@ -36,4 +37,11 @@ tasks.jar {
 
 tasks.test {
   maxHeapSize = "1024m"
+}
+
+pmd {
+    toolVersion = '6.55.0'
+    ruleSetFiles = files("pmd.xml")
+    ignoreFailures = true
+    ruleSets = []
 }
