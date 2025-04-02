@@ -41,7 +41,7 @@ tasks.test {
 
 pmd {
     toolVersion = "6.55.0"
-    maxFailures = 999999
+    isIgnoreFailures = true
 }
 
 tasks.withType<Pmd>().configureEach {
